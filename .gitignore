@@ -1,0 +1,16 @@
+# Node
+node_modules/
+frontend/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+backend/.venv/
+backend/db.sqlite3
+
+# Secrets
+.env
+*.env
+!.env.example
+!.env.example.txt
