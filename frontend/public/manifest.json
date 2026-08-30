@@ -1,0 +1,17 @@
+{
+  "name": "AN Pandey - Full Stack Developer",
+  "short_name": "AN Pandey",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060a12",
+  "theme_color": "#4d7dff",
+  "description": "AN Pandey Full Stack Developer portfolio",
+  "icons": [
+    {
+      "src": "/profile-placeholder.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
