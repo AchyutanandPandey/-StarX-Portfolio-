@@ -79,8 +79,8 @@ def contact_api(request):
 
     saved = ContactMessage.objects.create(name=name, email=email, subject=subject, message=message)
 
-    receiver = settings.CONTACT_RECEIVER_EMAIL
-    if not receiver or not settings.EMAIL_HOST_USER or not settings.EMAIL_HOST_PASSWORD:
+    receiver = getattr(settings, "CONTACT_RECEIVER_EMAIL", "")
+    if not receiver or not getattr(settings, "EMAIL_HOST_USER", "") or not getattr(settings, "EMAIL_HOST_PASSWORD", ""):
         return JsonResponse({
             "ok": True,
             "message": "Message saved successfully. Email service is not configured yet."
