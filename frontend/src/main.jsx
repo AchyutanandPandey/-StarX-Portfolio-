@@ -450,7 +450,7 @@ function App() {
       <footer className="footer">
         <div className="footer-inner">
           <div className="footer-profile">
-            <div className="footer-avatar"><img src="/profile.jpg" alt={`${profile.name} profile`}/></div>
+            <div className="footer-avatar"><img src={`${import.meta.env.BASE_URL}profile.jpg`} alt={`${profile.name} profile`}/></div>
             <div>
               <strong>{profile.name}</strong>
               <span>{profile.role}</span>
