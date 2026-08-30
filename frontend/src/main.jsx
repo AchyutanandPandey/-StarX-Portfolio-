@@ -179,7 +179,7 @@ function App() {
             <div className="floating-tech tech-python">🐍</div>
             <div className="floating-tech tech-node">⬡</div>
             <div className="portrait-frame">
-              <img src="/profile.jpg" alt={`${profile.name} profile`} />
+              <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt={`${profile.name} profile`} />
             </div>
           </div>
         </section>
